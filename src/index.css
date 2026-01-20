@@ -5,19 +5,19 @@ body {
 * {
   box-sizing: border-box;
 }
-/* Клас для контейнера тексту */
+
 .animated-text span {
   display: inline-block;
-  transition: color 0.8s ease, text-shadow 0.8s ease; /* Повільне зникання */
+  transition: color 0.8s ease, text-shadow 0.8s ease; 
   cursor: default;
 }
 
-/* Ефект при наведенні на кожну букву */
+
 .animated-text span:hover {
-  transition: color 0s; /* Миттєве засвічування */
+  transition: color 0s; 
 }
 
-/* Різні кольори для кожної букви через nth-child */
+
 .animated-text span:nth-child(5n+1):hover { color: #ff0055; text-shadow: 0 0 10px #ff0055; }
 .animated-text span:nth-child(5n+2):hover { color: #00fbff; text-shadow: 0 0 10px #00fbff; }
 .animated-text span:nth-child(5n+3):hover { color: #fffa00; text-shadow: 0 0 10px #fffa00; }
